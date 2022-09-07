@@ -1,17 +1,17 @@
 // ---Functional Scope---
-// function foo() {
-//     if (true) {
-//         var heroOne = "Iron Man";
-//         let heroTwo = "Super Man";
-//         const heroThree = "Batman";
-//         console.log(heroTwo, "😎", heroThree); // Here it works perfectly fine since we are in the block scope
-//     }
-//     console.log(heroOne); // var declarations can be called anywhere within the functional scope.
+function foo() {
+    if (true) {
+        var heroOne = "Iron Man";
+        let heroTwo = "Super Man";
+        const heroThree = "Batman";
+        console.log(heroTwo, "😎", heroThree); // Here it works perfectly fine since we are in the block scope
+    }
+    console.log(heroOne); // var declarations can be called anywhere within the functional scope.
 
-//     // console.log(heroTwo); // ReferenceError: heroTwo is not defined, let is block scoped
-//     // console.log(heroThree); // ReferenceError: heroThree is not defined, const is also a block scoped
-// }
-// foo();
+    // console.log(heroTwo); // ReferenceError: heroTwo is not defined, let is block scoped
+    // console.log(heroThree); // ReferenceError: heroThree is not defined, const is also a block scoped
+}
+foo();
 
 // ----------------------------------------------------------------
 
@@ -20,11 +20,11 @@
   // A block is used to define multiple set of statements form a compound statement.
 }
 // Example usage: with var keyword
-// if (true) {
-//     var firstName = "Dhwanith"
-//     var lastName = "Chelumalla"
-//     console.log(firstName + " " + lastName)
-// }
+if (true) {
+    var firstName = "Dhwanith"
+    var lastName = "Chelumalla"
+    console.log(firstName + " " + lastName)
+}
 
 // Can clg from here since we are declaring variables using var keyword.
 
@@ -34,11 +34,11 @@
 
 // Example usage: with let or const keyword
 
-// if (true) {
-//     let firstName = "Dhwanith"
-//     let lastName = "Chelumalla"
-//     console.log(firstName + " " + lastName)
-// }
+if (true) {
+    let firstName = "Dhwanith"
+    let lastName = "Chelumalla"
+    console.log(firstName + " " + lastName)
+}
 // ReferenceError: firstName is not defined
 // let and const are block scoped. Hence, execute/call within block scope.
 

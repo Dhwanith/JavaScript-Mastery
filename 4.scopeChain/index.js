@@ -1,19 +1,19 @@
-// function findName() {
-//     var b = "b"
-//     return printName();
-// }
+function findName() {
+    var b = "b"
+    return printName();
+}
 
-// function printName() {
-//     var c = "c"
-//     return "Dhwanith Chelumalla"
-// }
+function printName() {
+    var c = "c"
+    return "Dhwanith Chelumalla"
+}
 
-// function sayMyName() {
-//     var a = "a"
-//     return findName();
-// }
+function sayMyName() {
+    var a = "a"
+    return findName();
+}
 
-// sayMyName();
+sayMyName();
 
 //  ---Lexical Scope---
 // Lexical Environment === [[scope]]

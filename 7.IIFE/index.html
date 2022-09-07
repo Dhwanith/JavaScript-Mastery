@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>IIFE</h1>
+
+    <!-- <script>
+      var z = 1;
+      var scriptNormal = (function () {
+        // The good this is that we can just have one variable and this variable can be an object that contains many properties that we might want to use.
+        // This will only pollute global name space once thus avoiding global name space collisions.
+        function a() {
+          return 5;
+        }
+        return {
+          a: a, // scriptNormal.a() returns 5
+        };
+      })();
+    </script> -->
+
+    <!-- lets implement JQuery with the above example: -->
+
+    <script>
+      var scriptJquery = (function (SAT) {
+        SAT("h1").click(function () {
+            SAT("h1").hide();
+        })
+        return {
+          SAT: "hi"
+        };
+      }) (jQuery); // I have added jQuery from the global name space as a parameter onto my IIFE function
+      // Here, SAT has the properties of jQuery, therefore it looks in its local scope rather than the global scope. which in turn benefits in the performance of the code.
+    </script>
+
+    <script>
+      var zz = 20;
+    </script>
+
+    <script>
+      var zzz = 30;
+    </script>
+
+    <script>
+      var zzzz = 40;
+      function a() {
+        return "hahahaha";
+      }
+    </script>
+  </body>
+</html>
+
+<!-- IIFE or Immediately Invoked Function Expression
+Pros: It doesn't pollute the global execution context
+
+---------------------------------------------------------------- -->
