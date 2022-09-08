@@ -10,7 +10,7 @@ a(); // similar to window.a();
 // // Here, a() function is a property of the window object
 
 //-------------------------------------------------------
-// 1. In the above example, this gives us the methods to access to  their object.
+// 1. In the above example, t his gives us the methods to access to  their object.
 // Methods are basically, functions inside an object
 
 const aadharUpdateObject = {
